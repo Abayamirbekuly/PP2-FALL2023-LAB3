@@ -1,5 +1,6 @@
-input_str = input()
-A = input_str.split()
-max_value = max(A)
-max_index = A.index(max_value)
-print(max_value, max_index)
+index_of_max = 0
+a = [int(i) for i in input().split()]
+for i in range(1, len(a)):
+    if a[i] > a[index_of_max]:
+        index_of_max = i
+print(a[index_of_max], index_of_max)
